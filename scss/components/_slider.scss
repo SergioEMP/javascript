@@ -1,9 +1,19 @@
-.single-item{
+.slider2{
     width: 1440px;
+
     h1{
+        font-family: $font-primary;
+    }
+
+    p{
         font-family: $font-secundary;
     }
-    img{
-        height: 635px;
+    button{
+        color:color(secondary,dark);
+    }
+    .btn{
+        &btn-primary{
+            color:color(secondary,dark);
+        }
     }
 }

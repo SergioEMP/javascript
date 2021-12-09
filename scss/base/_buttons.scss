@@ -9,12 +9,14 @@
    outline: none;
    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
    text-transform: uppercase;
+   border-radius: 30px;
    width: 100%;
    @include mq-min(md) {
       width: auto;
    }
    &.btn-primary {
-      @include button( color( primary, dark ) );
+      @include button( color( secondary, base ) );
+      color: color(secondary,dark);
       &.outline {
          @include button( transparent, color( primary, dark ) );
          border: .13rem solid color( primary, dark );

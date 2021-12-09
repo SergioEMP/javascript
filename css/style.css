@@ -71,28 +71,28 @@ hr {
 
 @font-face {
   font-family: 'Horrible Jefe';
-  src: url("../../fonts/Horrible/HorribleJefe.woff2") format("woff2"), url("../../fonts/Horrible/HorribleJefe.woff") format("woff");
+  src: url("./../fonts/Horrible/HorribleJefe.woff2") format("woff2"), url("./../fonts/Horrible/HorribleJefe.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("../../fonts/Inter/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter/Inter-Bold.woff") format("woff");
+  src: url("./../fonts/Inter/Inter-Bold.woff2") format("woff2"), url("./../fonts/Inter/Inter-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("../../fonts/Inter/Inter-Black.woff2") format("woff2"), url("../../fonts/Inter/Inter-Black.woff") format("woff");
+  src: url("./../fonts/Inter/Inter-Black.woff2") format("woff2"), url("./../fonts/Inter/Inter-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("../../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter/Inter-Regular.woff") format("woff");
+  src: url("./../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("./../fonts/Inter/Inter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -111,7 +111,7 @@ html {
 
 /* line 11, ../scss/base/_body.scss */
 body {
-  font-family: "Horrible", sans-serif;
+  font-family: "Horrible", serif;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   display: flex;
@@ -155,14 +155,14 @@ a:hover, a:focus, button:hover, button:focus {
 a.underline-link, button.underline-link {
   color: #0074FC;
   cursor: pointer;
-  font-family: "Horrible", sans-serif;
+  font-family: "Horrible", serif;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: underline;
 }
 /* line 27, ../scss/base/_links.scss */
 a.text-link, button.text-link {
-  font-family: "Horrible", sans-serif;
+  font-family: "Horrible", serif;
   font-size: 1.6rem;
   text-transform: uppercase;
   border: none;
@@ -186,11 +186,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 47, ../scss/base/_links.scss */
 a.text-link.text-secondary-base, button.text-link.text-secondary-base {
-  color: #FFA20D;
+  color: #FFCA33;
 }
 /* line 49, ../scss/base/_links.scss */
 a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hover {
-  color: #532e00;
+  color: #1A2741;
 }
 /* line 53, ../scss/base/_links.scss */
 a.text-link.text-primary-base, button.text-link.text-primary-base {
@@ -808,7 +808,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 1, ../scss/base/_buttons.scss */
 .btn {
-  font-family: "Horrible", sans-serif;
+  font-family: "Horrible", serif;
   font-size: 1.6rem;
   padding: 1.35rem 2.5rem;
   border: none;
@@ -818,6 +818,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   outline: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
+  border-radius: 30px;
   width: 100%;
 }
 @media (min-width: 720px) {
@@ -826,14 +827,15 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     width: auto;
   }
 }
-/* line 16, ../scss/base/_buttons.scss */
+/* line 17, ../scss/base/_buttons.scss */
 .btn.btn-primary {
-  background: #002646;
+  background: #FFCA33;
   color: #ffffff;
+  color: #1A2741;
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-primary:hover {
-  background: #001322;
+  background: #ffc10f;
   transition: background 0.2s ease;
   text-decoration: none;
 }
@@ -845,7 +847,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 78, ../scss/config/_mixins.scss */
 .btn.btn-primary:active {
-  background: #000a13;
+  background: #ffbd00;
 }
 /* line 81, ../scss/config/_mixins.scss */
 .btn.btn-primary.disabled, .btn.btn-primary:disabled {
@@ -864,7 +866,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.disabled:focus, .btn.btn-primary:disabled:focus {
   box-shadow: none;
 }
-/* line 18, ../scss/base/_buttons.scss */
+/* line 20, ../scss/base/_buttons.scss */
 .btn.btn-primary.outline {
   background: transparent;
   color: #002646;
@@ -903,7 +905,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.outline.disabled:focus, .btn.btn-primary.outline:disabled:focus {
   box-shadow: none;
 }
-/* line 21, ../scss/base/_buttons.scss */
+/* line 23, ../scss/base/_buttons.scss */
 .btn.btn-primary.outline:hover, .btn.btn-primary.outline:active {
   background: #002646;
   color: #ffffff;
@@ -941,14 +943,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-primary.outline:hover.disabled:focus, .btn.btn-primary.outline:hover:disabled:focus, .btn.btn-primary.outline:active.disabled:focus, .btn.btn-primary.outline:active:disabled:focus {
   box-shadow: none;
 }
-/* line 26, ../scss/base/_buttons.scss */
+/* line 28, ../scss/base/_buttons.scss */
 .btn.btn-secondary {
-  background: #FFA20D;
+  background: #FFCA33;
   color: #1b1b1b;
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-secondary:hover {
-  background: #e88f00;
+  background: #ffc10f;
   transition: background 0.2s ease;
   text-decoration: none;
 }
@@ -960,7 +962,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 78, ../scss/config/_mixins.scss */
 .btn.btn-secondary:active {
-  background: #d98600;
+  background: #ffbd00;
 }
 /* line 81, ../scss/config/_mixins.scss */
 .btn.btn-secondary.disabled, .btn.btn-secondary:disabled {
@@ -979,11 +981,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.disabled:focus, .btn.btn-secondary:disabled:focus {
   box-shadow: none;
 }
-/* line 28, ../scss/base/_buttons.scss */
+/* line 30, ../scss/base/_buttons.scss */
 .btn.btn-secondary.outline {
   background: transparent;
-  color: #FFA20D;
-  border: 0.15rem solid #FFA20D;
+  color: #FFCA33;
+  border: 0.15rem solid #FFCA33;
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover {
@@ -1018,14 +1020,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.outline.disabled:focus, .btn.btn-secondary.outline:disabled:focus {
   box-shadow: none;
 }
-/* line 31, ../scss/base/_buttons.scss */
+/* line 33, ../scss/base/_buttons.scss */
 .btn.btn-secondary.outline:hover, .btn.btn-secondary.outline:active {
-  background: #FFA20D;
+  background: #FFCA33;
   color: #ffffff;
 }
 /* line 68, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:hover, .btn.btn-secondary.outline:active:hover {
-  background: #e88f00;
+  background: #ffc10f;
   transition: background 0.2s ease;
   text-decoration: none;
 }
@@ -1037,7 +1039,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 /* line 78, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:active, .btn.btn-secondary.outline:active:active {
-  background: #d98600;
+  background: #ffbd00;
 }
 /* line 81, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover.disabled, .btn.btn-secondary.outline:hover:disabled, .btn.btn-secondary.outline:active.disabled, .btn.btn-secondary.outline:active:disabled {
@@ -1056,26 +1058,34 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 .btn.btn-secondary.outline:hover.disabled:focus, .btn.btn-secondary.outline:hover:disabled:focus, .btn.btn-secondary.outline:active.disabled:focus, .btn.btn-secondary.outline:active:disabled:focus {
   box-shadow: none;
 }
-/* line 37, ../scss/base/_buttons.scss */
+/* line 39, ../scss/base/_buttons.scss */
 .btn.small {
   padding: 1.1rem 1.6rem;
   font-size: 1.35rem;
 }
-/* line 41, ../scss/base/_buttons.scss */
+/* line 43, ../scss/base/_buttons.scss */
 .btn.medium {
   font-size: 1.4rem;
   padding: 11px 38px;
 }
 
 /* line 1, ../scss/components/_slider.scss */
-.single-item {
+.slider2 {
   width: 1440px;
 }
-/* line 3, ../scss/components/_slider.scss */
-.single-item h1 {
+/* line 4, ../scss/components/_slider.scss */
+.slider2 h1 {
+  font-family: "Horrible", serif;
+}
+/* line 8, ../scss/components/_slider.scss */
+.slider2 p {
   font-family: "Inter", sans-serif;
 }
-/* line 6, ../scss/components/_slider.scss */
-.single-item img {
-  height: 635px;
+/* line 11, ../scss/components/_slider.scss */
+.slider2 button {
+  color: #1A2741;
+}
+/* line 15, ../scss/components/_slider.scss */
+.slider2 .btnbtn-primary {
+  color: #1A2741;
 }

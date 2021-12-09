@@ -3,7 +3,7 @@
 // ==========================================================================
 
 $font-size         : 1.6rem;
-$font-primary      : 'Horrible', sans-serif;
+$font-primary      : 'Horrible', serif;
 $font-secundary    : 'Inter', sans-serif;
 $font-icon         : 'iconFont'; 
 
@@ -17,8 +17,8 @@ $colors: (
       dark     : #002646
    ),
    secondary: (
-      base     : #FFA20D,
-      dark     : rgb(83, 46, 0)
+      base     : #FFCA33,
+      dark     : #1A2741
    ),
    complementary: (
       one      : #001B3D,
