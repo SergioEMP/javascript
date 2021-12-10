@@ -15,8 +15,8 @@
       width: auto;
    }
    &.btn-primary {
-      @include button( color( secondary, base ) );
-      color: color(secondary,dark);
+      @include button( color( secondary, dark ) );
+      color: color(complementary,one);
       &.outline {
          @include button( transparent, color( primary, dark ) );
          border: .13rem solid color( primary, dark );

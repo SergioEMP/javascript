@@ -1,19 +1,115 @@
-.slider2{
-    width: 1440px;
-
-    h1{
-        font-family: $font-primary;
-    }
-
-    p{
-        font-family: $font-secundary;
-    }
-    button{
-        color:color(secondary,dark);
-    }
-    .btn{
-        &btn-primary{
-            color:color(secondary,dark);
+body{
+    width: 1433px;
+}
+.slider1{
+    text-align: center;
+    &__content1{
+        position: absolute;
+        color: color(grayscale,white);
+        &-cont{
+            align-items: center;
+            color: color(grayscale,white);
+            display: flex;
+            flex-direction: row;
+            margin-left: 488px;
+            margin-top: 214px;
+            .logo{
+                margin-left: 20px;
+            }
+            h1{
+                font-size: 45px;
+                letter-spacing: 4.5px;
+            }
+        }
+        p{
+            margin-top: 24px;
+            margin-left: 425px;
+            font-family: $font-secundary;
+            font-size: 16px;
+            width: 580px;
+        }
+        .btn{
+            height: 64px;
+            margin-left: 425px;
+            margin-top: 75px;
+            width: 255px;
+            &-primary{
+                font-size: 20px;
+            }
         }
     }
+}
+.slid-dots1{
+    .slick-dots {
+        position: absolute;
+        bottom: 100px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+.slide2{
+    color: color(secondary,base);
+    h1{
+        font-size: 35px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    h3{
+        font-family: $font-secundary;
+        font-size: 16px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .slider2{
+        height: 467px;
+        margin-right: 75px;
+        margin-left: 75px;
+        &__content{
+            display: flex;
+            flex-direction: row;
+            height: 467px;
+            width: 1291px;
+            &-part1{
+                img{
+                    border-top-left-radius:20px ;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+            &-part2{
+                align-items: center;
+                background: color(grayscale,white);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 549px;
+                .number{
+                    color: color(secondary,dark);
+                    font-size: 54px;
+                }
+                .step{
+                    font-size: 35px;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+.slid-dots2{
+    .slick-dots {
+        align-items: flex-end;
+        bottom: 180px;
+        display: flex;
+        flex-direction:column-reverse;
+        height: 100%;
+        list-style: none;
+        position: absolute;
+        text-align: center;
+    } 
 }

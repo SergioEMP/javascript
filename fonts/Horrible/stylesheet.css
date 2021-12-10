@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Horrible Jefe';
-    src: url('HorribleJefe.woff2') format('woff2'),
-        url('HorribleJefe.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
