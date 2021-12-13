@@ -4,8 +4,8 @@ body{
 .slider1{
     text-align: center;
     &__content1{
-        position: absolute;
         color: color(grayscale,white);
+        position: absolute;
         &-cont{
             align-items: center;
             color: color(grayscale,white);
@@ -22,10 +22,10 @@ body{
             }
         }
         p{
-            margin-top: 24px;
-            margin-left: 425px;
             font-family: $font-secundary;
             font-size: 16px;
+            margin-left: 425px;
+            margin-top: 24px;
             width: 580px;
         }
         .btn{
@@ -41,14 +41,50 @@ body{
 }
 .slid-dots1{
     .slick-dots {
-        position: absolute;
         bottom: 100px;
         display: block;
-        width: 100%;
-        padding: 0;
-        margin: 0;
         list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
         text-align: center;
+        width: 100%;
+        li{
+            &.slick-active{
+                border-radius: 100%;
+                border-style: solid;
+                border-width: 2px;
+                color: color(complementary,two);
+
+            }
+            button{
+                &:before{
+                    color:color(grayscale,white);
+                    font-size: 14px;
+                    left: -2px;
+                    top: -1px;
+                }
+            }
+        }
+    }
+    .slick-arrow{
+        &.slick-prev{
+            left: 97px;
+            top: 345px;
+            z-index: 1;
+            &:before{
+                color: color(secondary,dark);
+                font-size: 70px;
+            }
+            }
+        &.slick-next{
+            left: 1235px;
+            top: 345px;
+            &:before{
+                color: color(secondary,dark);
+                font-size: 70px;
+            }
+        }
     }
 }
 
@@ -104,11 +140,48 @@ body{
 .slid-dots2{
     .slick-dots {
         align-items: flex-end;
-        bottom: 180px;
+        bottom: 200px;
         display: flex;
         flex-direction:column;
         list-style: none;
         position: absolute;
+        right: 30px;
         text-align: center;
-    } 
+        li{
+            &.slick-active{
+                border-radius: 100%;
+                border-style: solid;
+                border-width: 2px;
+                color: color(secondary,dark);
+            }
+            button{
+                margin: 20px;
+                &:before{
+                    color:color(secondary,base);
+                    font-size: 15px;
+                    left: -2px;
+                    top: -1px;
+                }
+            }
+        }
+    }
+    .slick-arrow{
+        &.slick-prev{
+            left:1080px;
+            top: 410px;
+            z-index: 1;
+            &:before{
+                color: color(secondary,dark);
+                font-size: 50px;
+            }
+            }
+        &.slick-next{
+            left: 1200px;
+            top: 410px;
+            &:before{
+                color: color(secondary,dark);
+                font-size: 50px;
+            }
+        }
+    }
 }

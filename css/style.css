@@ -1080,8 +1080,8 @@ body {
 }
 /* line 6, ../scss/components/_slider.scss */
 .slider1__content1 {
-  position: absolute;
   color: #ffffff;
+  position: absolute;
 }
 /* line 9, ../scss/components/_slider.scss */
 .slider1__content1-cont {
@@ -1103,10 +1103,10 @@ body {
 }
 /* line 24, ../scss/components/_slider.scss */
 .slider1__content1 p {
-  margin-top: 24px;
-  margin-left: 425px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  margin-left: 425px;
+  margin-top: 24px;
   width: 580px;
 }
 /* line 31, ../scss/components/_slider.scss */
@@ -1123,52 +1123,87 @@ body {
 
 /* line 43, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots {
-  position: absolute;
   bottom: 100px;
   display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
   text-align: center;
+  width: 100%;
+}
+/* line 53, ../scss/components/_slider.scss */
+.slid-dots1 .slick-dots li.slick-active {
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  color: #FFCA33;
+}
+/* line 61, ../scss/components/_slider.scss */
+.slid-dots1 .slick-dots li button:before {
+  color: #ffffff;
+  font-size: 14px;
+  left: -2px;
+  top: -1px;
+}
+/* line 71, ../scss/components/_slider.scss */
+.slid-dots1 .slick-arrow.slick-prev {
+  left: 97px;
+  top: 345px;
+  z-index: 1;
+}
+/* line 75, ../scss/components/_slider.scss */
+.slid-dots1 .slick-arrow.slick-prev:before {
+  color: #FFC627;
+  font-size: 70px;
+}
+/* line 80, ../scss/components/_slider.scss */
+.slid-dots1 .slick-arrow.slick-next {
+  left: 1235px;
+  top: 345px;
+}
+/* line 83, ../scss/components/_slider.scss */
+.slid-dots1 .slick-arrow.slick-next:before {
+  color: #FFC627;
+  font-size: 70px;
 }
 
-/* line 55, ../scss/components/_slider.scss */
+/* line 91, ../scss/components/_slider.scss */
 .slide2 {
   color: #0D2240;
 }
-/* line 57, ../scss/components/_slider.scss */
+/* line 93, ../scss/components/_slider.scss */
 .slide2 h1 {
   font-size: 35px;
   margin-top: 50px;
   text-align: center;
 }
-/* line 62, ../scss/components/_slider.scss */
+/* line 98, ../scss/components/_slider.scss */
 .slide2 h3 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 68, ../scss/components/_slider.scss */
+/* line 104, ../scss/components/_slider.scss */
 .slide2 .slider2 {
   height: 467px;
   margin-right: 75px;
   margin-left: 75px;
 }
-/* line 72, ../scss/components/_slider.scss */
+/* line 108, ../scss/components/_slider.scss */
 .slide2 .slider2__content {
   display: flex;
   flex-direction: row;
   height: 467px;
   width: 1291px;
 }
-/* line 78, ../scss/components/_slider.scss */
+/* line 114, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part1 img {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-/* line 83, ../scss/components/_slider.scss */
+/* line 119, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 {
   align-items: center;
   background: #ffffff;
@@ -1177,12 +1212,12 @@ body {
   justify-content: center;
   width: 549px;
 }
-/* line 90, ../scss/components/_slider.scss */
+/* line 126, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 .number {
   color: #FFC627;
   font-size: 54px;
 }
-/* line 94, ../scss/components/_slider.scss */
+/* line 130, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 .step {
   font-size: 35px;
   line-height: 40px;
@@ -1190,13 +1225,53 @@ body {
   width: 250px;
 }
 
-/* line 105, ../scss/components/_slider.scss */
+/* line 141, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots {
   align-items: flex-end;
-  bottom: 180px;
+  bottom: 200px;
   display: flex;
   flex-direction: column;
   list-style: none;
   position: absolute;
+  right: 30px;
   text-align: center;
+}
+/* line 151, ../scss/components/_slider.scss */
+.slid-dots2 .slick-dots li.slick-active {
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  color: #FFC627;
+}
+/* line 157, ../scss/components/_slider.scss */
+.slid-dots2 .slick-dots li button {
+  margin: 20px;
+}
+/* line 159, ../scss/components/_slider.scss */
+.slid-dots2 .slick-dots li button:before {
+  color: #0D2240;
+  font-size: 15px;
+  left: -2px;
+  top: -1px;
+}
+/* line 169, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-prev {
+  left: 1080px;
+  top: 410px;
+  z-index: 1;
+}
+/* line 173, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-prev:before {
+  color: #FFC627;
+  font-size: 50px;
+}
+/* line 178, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-next {
+  left: 1200px;
+  top: 410px;
+}
+/* line 181, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-next:before {
+  color: #FFC627;
+  font-size: 50px;
 }
