@@ -8,6 +8,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider2').slick({
         dots: true,
-        arrows:false
+        arrows: true,
     });
   });
