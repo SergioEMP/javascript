@@ -1224,8 +1224,18 @@ body {
   text-align: center;
   width: 250px;
 }
+/* line 137, ../scss/components/_slider.scss */
+.slide2 .slider2__content .counter {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  position: relative;
+  right: 100px;
+  text-align: center;
+  top: 400px;
+}
 
-/* line 141, ../scss/components/_slider.scss */
+/* line 150, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots {
   align-items: flex-end;
   bottom: 200px;
@@ -1236,41 +1246,41 @@ body {
   right: 30px;
   text-align: center;
 }
-/* line 151, ../scss/components/_slider.scss */
+/* line 160, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li.slick-active {
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
   color: #FFC627;
 }
-/* line 157, ../scss/components/_slider.scss */
+/* line 166, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button {
   margin: 20px;
 }
-/* line 159, ../scss/components/_slider.scss */
+/* line 168, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button:before {
   color: #0D2240;
   font-size: 15px;
   left: -2px;
   top: -1px;
 }
-/* line 169, ../scss/components/_slider.scss */
+/* line 178, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-prev {
   left: 1080px;
   top: 410px;
   z-index: 1;
 }
-/* line 173, ../scss/components/_slider.scss */
+/* line 182, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-prev:before {
   color: #FFC627;
   font-size: 50px;
 }
-/* line 178, ../scss/components/_slider.scss */
+/* line 187, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-next {
   left: 1200px;
   top: 410px;
 }
-/* line 181, ../scss/components/_slider.scss */
+/* line 190, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-next:before {
   color: #FFC627;
   font-size: 50px;

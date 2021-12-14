@@ -134,6 +134,15 @@ body{
                     width: 250px;
                 }
             }
+            .counter{
+                display: flex;
+                flex-direction: row;
+                font-size: 25px;
+                position: relative;
+                right: 100px;
+                text-align: center;
+                top: 400px;
+            }
         }
     }
 }
