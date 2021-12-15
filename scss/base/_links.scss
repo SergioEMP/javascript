@@ -1,8 +1,7 @@
 a, button {
-	color: color( controls, base );
+	color: color(complementary, one );
 	text-decoration: none;
 	outline: 0;
-   transition: color .1s ease-out;
 
    &.button {
       &:hover {
@@ -11,7 +10,7 @@ a, button {
    }
 
 	&:hover, &:focus {
-      color: color( controls, dark );
+      color: color( complementary,one );
       @include mq-max(sm){
          text-decoration: none;
       }
@@ -39,9 +38,9 @@ a, button {
       padding: 0;
       cursor: pointer;
       &.text-primary-base {
-         color: color( primary, base );
+         color: color( complementary, one );
          &:hover {
-            color: color( primary, dark );
+            color: color( complementary, one );
          }
       }
       &.text-secondary-base {
