@@ -1,8 +1,7 @@
-body{
+
+.slider1{
     max-width: 414px;
     width: 100%;
-}
-.slider1{
     &__content1{        
         color: color(grayscale,white);
         font-size: 40px;
@@ -80,6 +79,8 @@ body{
         width: 100%;
     }
     .slider1{
+        max-width: 1440px;
+        width: 100%;
         text-align: center;
         &__content1{
             color: color(grayscale,white);
@@ -176,9 +177,10 @@ body{
         }
     }
 }
-
 .slide2{
     color: color(secondary,base);
+    max-width: 500px;
+    width: 100%;
     .text{
         align-items: center;
         display: flex;
@@ -199,15 +201,15 @@ body{
         }
     }
     .slider2{
-        margin-right: 75px;
-        margin-left: 75px;
+        margin-left: 10px;
         &__content{
             display: flex;
             flex-direction: column;
-            height: 800px;
+            height: 883px;
             width: 3px;
             &-part1{
                 img{
+                    object-fit: cover;
                     border-top-left-radius:20px ;
                     border-bottom-left-radius: 20px;
                 }
@@ -218,39 +220,43 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 549px;
+                margin-top: 35px;
+                width: 368px;
                 .number{
                     color: color(secondary,dark);
                     font-size: 54px;
+                    margin-left: 10px;
+                    margin-top: 18px;
                 }
                 .step{
                     font-size: 35px;
-                    line-height: 40px;
+                    line-height: 34px;
+                    margin-top: -10px;
                     text-align: center;
                     width: 250px;
                 }
             }
             .counter{
                 display: flex;
-                flex-direction: row;
-                font-size: 25px;
+                flex-direction: column;
+                font-size: 27px;
+                left: -13px;
                 position: relative;
-                right: 100px;
                 text-align: center;
-                top: 400px;
+                top: 88px;
             }
         }
     }
 }
 .slid-dots2{
     .slick-dots {
-        align-items: flex-end;
-        bottom: 200px;
+        align-items: center;
+        bottom: 80px;
         display: flex;
-        flex-direction:column;
+        flex-direction:row;
+        justify-content: center;
         list-style: none;
         position: absolute;
-        right: 30px;
         text-align: center;
         li{
             &.slick-active{
@@ -270,19 +276,29 @@ body{
             }
         }
     }
+}
 @include mq-min(xl){
     .slide2{
+        max-width: 1440px;
+        width: 100%;
         color: color(secondary,base);
-        h1{
-            font-size: 35px;
-            margin-top: 50px;
-            text-align: center;
-        }
-        h3{
-            font-family: $font-secundary;
-            font-size: 16px;
-            margin-bottom: 40px;
-            text-align: center;
+        .text{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 1440px;
+            h1{
+                font-size: 35px;
+                margin-top: 50px;
+                text-align: center;
+            }
+            h3{
+                font-family: $font-secundary;
+                font-size: 16px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
         }
         .slider2{
             height: 467px;
@@ -297,6 +313,7 @@ body{
                     img{
                         border-top-left-radius:20px ;
                         border-bottom-left-radius: 20px;
+                        object-fit: cover;
                     }
                 }
                 &-part2{
@@ -377,5 +394,4 @@ body{
             }
         }
     }
-}
 }

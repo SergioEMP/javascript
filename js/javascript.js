@@ -19,6 +19,5 @@ $(document).ready(function(){
   });
   
   $slickElement.slick({
-    autoplay: true,
     dots: true
   });
