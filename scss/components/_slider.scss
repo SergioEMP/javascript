@@ -1,4 +1,6 @@
-
+.icon-arrow-back{
+    color: color(grayscale,black);
+}
 .slider1{
     max-width: 414px;
     width: 100%;
@@ -160,7 +162,7 @@
                 z-index: 1;
                 &:before{
                     color: color(secondary,dark);
-                    content: url('../images/prev-arrow.png');
+                    content: url('\e900');
                     font-size: 70px;
                     width: 8px;
                 }
@@ -169,7 +171,7 @@
                 left: 1235px;
                 top: 345px;
                 &:before{
-                    content:">";
+                    content:"\e901";
                     color: color(secondary,dark);
                     font-size: 70px;
                 }
@@ -279,9 +281,10 @@
 }
 @include mq-min(xl){
     .slide2{
+        color: color(secondary,base);
+        margin-left: -5px;
         max-width: 1440px;
         width: 100%;
-        color: color(secondary,base);
         .text{
             align-items: center;
             display: flex;
@@ -290,14 +293,16 @@
             width: 1440px;
             h1{
                 font-size: 35px;
-                margin-top: 50px;
+                font-weight: 600;
+                margin-top: 39px;
                 text-align: center;
             }
             h3{
                 font-family: $font-secundary;
                 font-size: 16px;
-                margin-bottom: 40px;
+                margin-bottom: 62px;
                 text-align: center;
+                width: 461px;
             }
         }
         .slider2{
@@ -313,7 +318,10 @@
                     img{
                         border-top-left-radius:20px ;
                         border-bottom-left-radius: 20px;
+                        height: 468px;
                         object-fit: cover;
+                        width: 718px;
+
                     }
                 }
                 &-part2{
@@ -322,13 +330,17 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    margin-left: 22px;
+                    margin-top: -5px;
                     width: 549px;
                     .number{
+                        font-weight: 600;
                         color: color(secondary,dark);
                         font-size: 54px;
                     }
                     .step{
                         font-size: 35px;
+                        font-weight: 600;
                         line-height: 40px;
                         text-align: center;
                         width: 250px;
@@ -337,11 +349,11 @@
                 .counter{
                     display: flex;
                     flex-direction: row;
-                    font-size: 25px;
+                    font-size: 27px;
+                    margin-right: 54px;
                     position: relative;
-                    right: 100px;
                     text-align: center;
-                    top: 400px;
+                    top: 382px;
                 }
             }
         }
@@ -349,12 +361,12 @@
     .slid-dots2{
         .slick-dots {
             align-items: flex-end;
-            bottom: 200px;
+            bottom: 245px;
             display: flex;
             flex-direction:column;
             list-style: none;
             position: absolute;
-            right: 30px;
+            right: 20px; 
             text-align: center;
             li{
                 &.slick-active{
