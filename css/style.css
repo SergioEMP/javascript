@@ -1035,23 +1035,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 /* line 183, ../scss/components/_slider.scss */
 .slider2 {
   color: #0D2240;
+  margin-left: 10px;
   max-width: 500px;
   width: 100%;
 }
-/* line 187, ../scss/components/_slider.scss */
+/* line 188, ../scss/components/_slider.scss */
 .slider2 .text {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* line 192, ../scss/components/_slider.scss */
+/* line 193, ../scss/components/_slider.scss */
 .slider2 .text h1 {
   font-size: 35px;
   margin-top: 50px;
   text-align: center;
 }
-/* line 197, ../scss/components/_slider.scss */
+/* line 198, ../scss/components/_slider.scss */
 .slider2 .text h3 {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -1060,25 +1061,21 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 360px;
 }
-/* line 206, ../scss/components/_slider.scss */
-.slider2 .slider2 {
-  margin-left: 10px;
-}
-/* line 208, ../scss/components/_slider.scss */
-.slider2 .slider2__content {
+/* line 207, ../scss/components/_slider.scss */
+.slider2__content {
   display: flex;
   flex-direction: column;
   height: 883px;
   width: 3px;
 }
-/* line 214, ../scss/components/_slider.scss */
-.slider2 .slider2__content-part1 img {
+/* line 213, ../scss/components/_slider.scss */
+.slider2__content-part1 img {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-/* line 220, ../scss/components/_slider.scss */
-.slider2 .slider2__content-part2 {
+/* line 219, ../scss/components/_slider.scss */
+.slider2__content-part2 {
   align-items: center;
   background: #ffffff;
   display: flex;
@@ -1087,23 +1084,23 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 35px;
   width: 368px;
 }
-/* line 228, ../scss/components/_slider.scss */
-.slider2 .slider2__content-part2 .number {
+/* line 227, ../scss/components/_slider.scss */
+.slider2__content-part2 .number {
   color: #FFC627;
   font-size: 54px;
   margin-left: 10px;
   margin-top: 18px;
 }
-/* line 234, ../scss/components/_slider.scss */
-.slider2 .slider2__content-part2 .step {
+/* line 233, ../scss/components/_slider.scss */
+.slider2__content-part2 .step {
   font-size: 35px;
   line-height: 34px;
   margin-top: -10px;
   text-align: center;
   width: 250px;
 }
-/* line 242, ../scss/components/_slider.scss */
-.slider2 .slider2__content .counter {
+/* line 241, ../scss/components/_slider.scss */
+.slider2__content .counter {
   display: flex;
   flex-direction: column;
   font-size: 27px;
@@ -1113,7 +1110,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   top: 88px;
 }
 
-/* line 255, ../scss/components/_slider.scss */
+/* line 253, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots {
   align-items: center;
   bottom: 80px;
@@ -1124,44 +1121,44 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   position: absolute;
   text-align: center;
 }
-/* line 265, ../scss/components/_slider.scss */
+/* line 263, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li.slick-active {
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
   color: #FFC627;
 }
-/* line 271, ../scss/components/_slider.scss */
+/* line 269, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button {
   margin: 20px;
 }
-/* line 273, ../scss/components/_slider.scss */
+/* line 271, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button:before {
   color: #0D2240;
   font-size: 15px;
   left: -2px;
   top: -1px;
 }
-/* line 283, ../scss/components/_slider.scss */
+/* line 281, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-prev {
   color: #FFCA33;
   left: 122px;
   top: 845px;
   z-index: 1;
 }
-/* line 288, ../scss/components/_slider.scss */
+/* line 286, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-prev:before {
   content: "\e900";
   color: #FFC627;
   font-family: 'iconFont';
   font-size: 50px;
 }
-/* line 295, ../scss/components/_slider.scss */
+/* line 293, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-next {
   right: 180px;
   top: 845px;
 }
-/* line 298, ../scss/components/_slider.scss */
+/* line 296, ../scss/components/_slider.scss */
 .slid-dots2 .slick-arrow.slick-next:before {
   content: "\e901";
   color: #FFC627;
@@ -1170,14 +1167,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 1440px) {
-  /* line 308, ../scss/components/_slider.scss */
+  /* line 306, ../scss/components/_slider.scss */
   .slider2 {
     color: #0D2240;
     margin-left: -5px;
     max-width: 1440px;
     width: 100%;
   }
-  /* line 313, ../scss/components/_slider.scss */
+  /* line 311, ../scss/components/_slider.scss */
   .slider2 .text {
     align-items: center;
     display: flex;
@@ -1185,14 +1182,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     justify-content: center;
     width: 1440px;
   }
-  /* line 319, ../scss/components/_slider.scss */
+  /* line 317, ../scss/components/_slider.scss */
   .slider2 .text h1 {
     font-size: 35px;
     font-weight: 600;
     margin-top: 39px;
     text-align: center;
   }
-  /* line 325, ../scss/components/_slider.scss */
+  /* line 323, ../scss/components/_slider.scss */
   .slider2 .text h3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -1200,20 +1197,20 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 461px;
   }
-  /* line 333, ../scss/components/_slider.scss */
+  /* line 331, ../scss/components/_slider.scss */
   .slider2 .slider2 {
     height: 467px;
     margin-right: 75px;
     margin-left: 75px;
   }
-  /* line 337, ../scss/components/_slider.scss */
+  /* line 335, ../scss/components/_slider.scss */
   .slider2 .slider2__content {
     display: flex;
     flex-direction: row;
     height: 467px;
     width: 1291px;
   }
-  /* line 343, ../scss/components/_slider.scss */
+  /* line 341, ../scss/components/_slider.scss */
   .slider2 .slider2__content-part1 img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -1221,7 +1218,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     object-fit: cover;
     width: 718px;
   }
-  /* line 352, ../scss/components/_slider.scss */
+  /* line 350, ../scss/components/_slider.scss */
   .slider2 .slider2__content-part2 {
     align-items: center;
     background: #ffffff;
@@ -1232,13 +1229,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: -5px;
     width: 463px;
   }
-  /* line 361, ../scss/components/_slider.scss */
+  /* line 359, ../scss/components/_slider.scss */
   .slider2 .slider2__content-part2 .number {
     font-weight: 600;
     color: #FFC627;
     font-size: 54px;
   }
-  /* line 366, ../scss/components/_slider.scss */
+  /* line 364, ../scss/components/_slider.scss */
   .slider2 .slider2__content-part2 .step {
     font-size: 35px;
     font-weight: 600;
@@ -1246,7 +1243,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 250px;
   }
-  /* line 374, ../scss/components/_slider.scss */
+  /* line 372, ../scss/components/_slider.scss */
   .slider2 .slider2__content .counter {
     display: flex;
     flex-direction: row;
@@ -1257,7 +1254,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     top: 382px;
   }
 
-  /* line 387, ../scss/components/_slider.scss */
+  /* line 385, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots {
     align-items: flex-end;
     bottom: 245px;
@@ -1268,44 +1265,44 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     right: 170px;
     text-align: center;
   }
-  /* line 397, ../scss/components/_slider.scss */
+  /* line 395, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li.slick-active {
     border-radius: 100%;
     border-style: solid;
     border-width: 2px;
     color: #FFC627;
   }
-  /* line 403, ../scss/components/_slider.scss */
+  /* line 401, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button {
     margin: 20px;
   }
-  /* line 405, ../scss/components/_slider.scss */
+  /* line 403, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button:before {
     color: #0D2240;
     font-size: 15px;
     left: -2px;
     top: -1px;
   }
-  /* line 415, ../scss/components/_slider.scss */
+  /* line 413, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev {
     color: #FFCA33;
     left: 1125px;
     top: 387px;
     z-index: 1;
   }
-  /* line 420, ../scss/components/_slider.scss */
+  /* line 418, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev:before {
     content: "\e900";
     color: #FFC627;
     font-family: 'iconFont';
     font-size: 50px;
   }
-  /* line 427, ../scss/components/_slider.scss */
+  /* line 425, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next {
     right: 190px;
     top: 387px;
   }
-  /* line 430, ../scss/components/_slider.scss */
+  /* line 428, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next:before {
     content: "\e901";
     color: #FFC627;
