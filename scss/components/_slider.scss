@@ -1,6 +1,3 @@
-.icon-arrow-back{
-    color: color(grayscale,black);
-}
 .slider1{
     max-width: 414px;
     width: 100%;
@@ -73,6 +70,12 @@
                 }
             }
         }
+    }
+    .icon-arrow-back{
+        display: none !important;
+    }
+    .icon-arrow-next{
+        display: none !important;
     }
 }
 
@@ -156,31 +159,28 @@
                 }
             }
         }
-        .slick-arrow{
-            &.slick-prev{
-                left: 97px;
-                top: 345px;
-                z-index: 1;
-                &:before{
-                    color: color(secondary,dark);
-                    content: url('\e900');
-                    font-size: 70px;
-                    width: 8px;
-                }
-            }
-            &.slick-next{
-                left: 1235px;
-                top: 345px;
-                &:before{
-                    content:"\e901";
-                    color: color(secondary,dark);
-                    font-size: 70px;
-                }
-            }
+        .icon-arrow-back{
+            
+            color: color(complementary,two);
+            display: block !important;
+            font-size: 60px;
+            left: 100px;
+            position: absolute;
+            top: 337px;
+            z-index: 1;
+        }
+        .icon-arrow-next{
+            color:color(complementary,two);
+            display: block !important; 
+            font-size: 60px;
+            right: 137px;
+            position: absolute;
+            top: 337px;
+            z-index: 1;
         }
     }
 }
-.slide2{
+.slider2{
     color: color(secondary,base);
     max-width: 500px;
     width: 100%;
@@ -279,9 +279,33 @@
             }
         }
     }
+    .slick-arrow{
+        &.slick-prev{
+            color: color(complementary,two);
+            left:122px;
+            top: 845px;
+            z-index: 1;
+            &:before{
+                content: "\e900";
+                color: color(secondary,dark);
+                font-family: 'iconFont';
+                font-size: 50px;
+            }
+            }
+        &.slick-next{
+            right:180px;
+            top: 845px;
+            &:before{
+                content: "\e901";
+                color: color(secondary,dark);
+                font-family: 'iconFont';
+                font-size: 50px;
+            }
+        }
+    }
 }
 @include mq-min(xl){
-    .slide2{
+    .slider2{
         color: color(secondary,base);
         margin-left: -5px;
         max-width: 1440px;
@@ -333,7 +357,7 @@
                     justify-content: center;
                     margin-left: 22px;
                     margin-top: -5px;
-                    width: 549px;
+                    width: 463px;
                     .number{
                         font-weight: 600;
                         color: color(secondary,dark);
@@ -367,7 +391,7 @@
             flex-direction:column;
             list-style: none;
             position: absolute;
-            right: 20px; 
+            right: 170px; 
             text-align: center;
             li{
                 &.slick-active{
@@ -389,19 +413,24 @@
         }
         .slick-arrow{
             &.slick-prev{
-                left:1080px;
-                top: 410px;
+                color: color(complementary,two);
+                left:1125px;
+                top: 387px;
                 z-index: 1;
                 &:before{
+                    content: "\e900";
                     color: color(secondary,dark);
+                    font-family: 'iconFont';
                     font-size: 50px;
                 }
                 }
             &.slick-next{
-                left: 1200px;
-                top: 410px;
+                right:190px;
+                top: 387px;
                 &:before{
+                    content: "\e901";
                     color: color(secondary,dark);
+                    font-family: 'iconFont';
                     font-size: 50px;
                 }
             }

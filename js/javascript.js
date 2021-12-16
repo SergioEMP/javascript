@@ -1,11 +1,9 @@
 $(document).ready(function(){
-    $('.slider1').slick({
+    $('.slider1,.slide2').slick({
         dots: true,
-        arrows:true
-    });
-    $('.slider2').slick({
-      dots: true,
-      arrows: true,
+        arrows:true,
+        prevArrow: '<i class="icon-arrow-back"></i>',
+        nextArrow: '<i class="icon-arrow-next"></i>',
     });
   });
 
@@ -21,3 +19,4 @@ $(document).ready(function(){
   $slickElement.slick({
     dots: true
   });
+

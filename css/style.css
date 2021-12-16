@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -838,23 +837,18 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 /* line 1, ../scss/components/_slider.scss */
-.icon-arrow-back {
-  color: #000000;
-}
-
-/* line 4, ../scss/components/_slider.scss */
 .slider1 {
   max-width: 414px;
   width: 100%;
 }
-/* line 7, ../scss/components/_slider.scss */
+/* line 4, ../scss/components/_slider.scss */
 .slider1__content1 {
   color: #ffffff;
   font-size: 40px;
   position: absolute;
   text-align: center;
 }
-/* line 12, ../scss/components/_slider.scss */
+/* line 9, ../scss/components/_slider.scss */
 .slider1__content1-cont {
   align-items: center;
   display: flex;
@@ -864,13 +858,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 43px;
   position: absolute;
 }
-/* line 21, ../scss/components/_slider.scss */
+/* line 18, ../scss/components/_slider.scss */
 .slider1__content1-cont h1 {
   font-size: 45px;
   letter-spacing: 3.8px;
   margin-top: 10px;
 }
-/* line 27, ../scss/components/_slider.scss */
+/* line 24, ../scss/components/_slider.scss */
 .slider1__content1 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -878,7 +872,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 197px;
   width: 332px;
 }
-/* line 34, ../scss/components/_slider.scss */
+/* line 31, ../scss/components/_slider.scss */
 .slider1__content1 .btn {
   background: #FFCA33;
   align-items: center;
@@ -889,12 +883,12 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 55px;
   width: 251.71px;
 }
-/* line 43, ../scss/components/_slider.scss */
+/* line 40, ../scss/components/_slider.scss */
 .slider1__content1 .btn__link {
   font-size: 20px;
 }
 
-/* line 50, ../scss/components/_slider.scss */
+/* line 47, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots {
   bottom: 84px;
   display: block;
@@ -905,40 +899,48 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 100%;
 }
-/* line 60, ../scss/components/_slider.scss */
+/* line 57, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots li.slick-active {
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
   color: #FFCA33;
 }
-/* line 68, ../scss/components/_slider.scss */
+/* line 65, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots li button:before {
   color: #ffffff;
   font-size: 14px;
   left: -3px;
   top: -1px;
 }
+/* line 74, ../scss/components/_slider.scss */
+.slid-dots1 .icon-arrow-back {
+  display: none !important;
+}
+/* line 77, ../scss/components/_slider.scss */
+.slid-dots1 .icon-arrow-next {
+  display: none !important;
+}
 
 @media (min-width: 1440px) {
-  /* line 80, ../scss/components/_slider.scss */
+  /* line 83, ../scss/components/_slider.scss */
   body {
     max-width: 1440px;
     width: 100%;
   }
 
-  /* line 84, ../scss/components/_slider.scss */
+  /* line 87, ../scss/components/_slider.scss */
   .slider1 {
     max-width: 1440px;
     width: 100%;
     text-align: center;
   }
-  /* line 88, ../scss/components/_slider.scss */
+  /* line 91, ../scss/components/_slider.scss */
   .slider1__content1 {
     color: #ffffff;
     position: absolute;
   }
-  /* line 91, ../scss/components/_slider.scss */
+  /* line 94, ../scss/components/_slider.scss */
   .slider1__content1-cont {
     align-items: center;
     color: #ffffff;
@@ -947,16 +949,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 488px;
     margin-top: 201px;
   }
-  /* line 98, ../scss/components/_slider.scss */
+  /* line 101, ../scss/components/_slider.scss */
   .slider1__content1-cont .logo {
     margin-left: 20px;
   }
-  /* line 101, ../scss/components/_slider.scss */
+  /* line 104, ../scss/components/_slider.scss */
   .slider1__content1-cont h1 {
     font-size: 45px;
     letter-spacing: 4.5px;
   }
-  /* line 106, ../scss/components/_slider.scss */
+  /* line 109, ../scss/components/_slider.scss */
   .slider1__content1 p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -964,7 +966,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: 305px;
     width: 580px;
   }
-  /* line 113, ../scss/components/_slider.scss */
+  /* line 116, ../scss/components/_slider.scss */
   .slider1__content1 .btn {
     align-items: center;
     display: flex;
@@ -975,16 +977,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: 93px;
     width: 255px;
   }
-  /* line 122, ../scss/components/_slider.scss */
+  /* line 125, ../scss/components/_slider.scss */
   .slider1__content1 .btn__link {
     font-size: 20px;
   }
-  /* line 127, ../scss/components/_slider.scss */
+  /* line 130, ../scss/components/_slider.scss */
   .slider1 .slid {
     height: 627px;
   }
 
-  /* line 132, ../scss/components/_slider.scss */
+  /* line 135, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots {
     bottom: 100px;
     display: block;
@@ -995,66 +997,62 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 100%;
   }
-  /* line 142, ../scss/components/_slider.scss */
+  /* line 145, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots li.slick-active {
     border-radius: 100%;
     border-style: solid;
     border-width: 2px;
     color: #FFCA33;
   }
-  /* line 150, ../scss/components/_slider.scss */
+  /* line 153, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots li button:before {
     color: #ffffff;
     font-size: 14px;
     left: -2px;
     top: -1px;
   }
-  /* line 160, ../scss/components/_slider.scss */
-  .slid-dots1 .slick-arrow.slick-prev {
-    left: 97px;
-    top: 345px;
+  /* line 162, ../scss/components/_slider.scss */
+  .slid-dots1 .icon-arrow-back {
+    color: #FFCA33;
+    display: block !important;
+    font-size: 60px;
+    left: 100px;
+    position: absolute;
+    top: 337px;
     z-index: 1;
   }
-  /* line 164, ../scss/components/_slider.scss */
-  .slid-dots1 .slick-arrow.slick-prev:before {
-    color: #FFC627;
-    content: url("");
-    font-size: 70px;
-    width: 8px;
-  }
-  /* line 171, ../scss/components/_slider.scss */
-  .slid-dots1 .slick-arrow.slick-next {
-    left: 1235px;
-    top: 345px;
-  }
-  /* line 174, ../scss/components/_slider.scss */
-  .slid-dots1 .slick-arrow.slick-next:before {
-    content: "\e901";
-    color: #FFC627;
-    font-size: 70px;
+  /* line 172, ../scss/components/_slider.scss */
+  .slid-dots1 .icon-arrow-next {
+    color: #FFCA33;
+    display: block !important;
+    font-size: 60px;
+    right: 137px;
+    position: absolute;
+    top: 337px;
+    z-index: 1;
   }
 }
 /* line 183, ../scss/components/_slider.scss */
-.slide2 {
+.slider2 {
   color: #0D2240;
   max-width: 500px;
   width: 100%;
 }
 /* line 187, ../scss/components/_slider.scss */
-.slide2 .text {
+.slider2 .text {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 /* line 192, ../scss/components/_slider.scss */
-.slide2 .text h1 {
+.slider2 .text h1 {
   font-size: 35px;
   margin-top: 50px;
   text-align: center;
 }
 /* line 197, ../scss/components/_slider.scss */
-.slide2 .text h3 {
+.slider2 .text h3 {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   margin-bottom: 40px;
@@ -1063,24 +1061,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   width: 360px;
 }
 /* line 206, ../scss/components/_slider.scss */
-.slide2 .slider2 {
+.slider2 .slider2 {
   margin-left: 10px;
 }
 /* line 208, ../scss/components/_slider.scss */
-.slide2 .slider2__content {
+.slider2 .slider2__content {
   display: flex;
   flex-direction: column;
   height: 883px;
   width: 3px;
 }
 /* line 214, ../scss/components/_slider.scss */
-.slide2 .slider2__content-part1 img {
+.slider2 .slider2__content-part1 img {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 /* line 220, ../scss/components/_slider.scss */
-.slide2 .slider2__content-part2 {
+.slider2 .slider2__content-part2 {
   align-items: center;
   background: #ffffff;
   display: flex;
@@ -1090,14 +1088,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   width: 368px;
 }
 /* line 228, ../scss/components/_slider.scss */
-.slide2 .slider2__content-part2 .number {
+.slider2 .slider2__content-part2 .number {
   color: #FFC627;
   font-size: 54px;
   margin-left: 10px;
   margin-top: 18px;
 }
 /* line 234, ../scss/components/_slider.scss */
-.slide2 .slider2__content-part2 .step {
+.slider2 .slider2__content-part2 .step {
   font-size: 35px;
   line-height: 34px;
   margin-top: -10px;
@@ -1105,7 +1103,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   width: 250px;
 }
 /* line 242, ../scss/components/_slider.scss */
-.slide2 .slider2__content .counter {
+.slider2 .slider2__content .counter {
   display: flex;
   flex-direction: column;
   font-size: 27px;
@@ -1144,61 +1142,87 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   left: -2px;
   top: -1px;
 }
+/* line 283, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-prev {
+  color: #FFCA33;
+  left: 122px;
+  top: 845px;
+  z-index: 1;
+}
+/* line 288, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-prev:before {
+  content: "\e900";
+  color: #FFC627;
+  font-family: 'iconFont';
+  font-size: 50px;
+}
+/* line 295, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-next {
+  right: 180px;
+  top: 845px;
+}
+/* line 298, ../scss/components/_slider.scss */
+.slid-dots2 .slick-arrow.slick-next:before {
+  content: "\e901";
+  color: #FFC627;
+  font-family: 'iconFont';
+  font-size: 50px;
+}
 
 @media (min-width: 1440px) {
-  /* line 284, ../scss/components/_slider.scss */
-  .slide2 {
+  /* line 308, ../scss/components/_slider.scss */
+  .slider2 {
     color: #0D2240;
     margin-left: -5px;
     max-width: 1440px;
     width: 100%;
   }
-  /* line 289, ../scss/components/_slider.scss */
-  .slide2 .text {
+  /* line 313, ../scss/components/_slider.scss */
+  .slider2 .text {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 1440px;
   }
-  /* line 295, ../scss/components/_slider.scss */
-  .slide2 .text h1 {
+  /* line 319, ../scss/components/_slider.scss */
+  .slider2 .text h1 {
     font-size: 35px;
     font-weight: 600;
     margin-top: 39px;
     text-align: center;
   }
-  /* line 301, ../scss/components/_slider.scss */
-  .slide2 .text h3 {
+  /* line 325, ../scss/components/_slider.scss */
+  .slider2 .text h3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     margin-bottom: 62px;
     text-align: center;
     width: 461px;
   }
-  /* line 309, ../scss/components/_slider.scss */
-  .slide2 .slider2 {
+  /* line 333, ../scss/components/_slider.scss */
+  .slider2 .slider2 {
     height: 467px;
     margin-right: 75px;
     margin-left: 75px;
   }
-  /* line 313, ../scss/components/_slider.scss */
-  .slide2 .slider2__content {
+  /* line 337, ../scss/components/_slider.scss */
+  .slider2 .slider2__content {
     display: flex;
     flex-direction: row;
     height: 467px;
     width: 1291px;
   }
-  /* line 319, ../scss/components/_slider.scss */
-  .slide2 .slider2__content-part1 img {
+  /* line 343, ../scss/components/_slider.scss */
+  .slider2 .slider2__content-part1 img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     height: 468px;
     object-fit: cover;
     width: 718px;
   }
-  /* line 328, ../scss/components/_slider.scss */
-  .slide2 .slider2__content-part2 {
+  /* line 352, ../scss/components/_slider.scss */
+  .slider2 .slider2__content-part2 {
     align-items: center;
     background: #ffffff;
     display: flex;
@@ -1206,24 +1230,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     justify-content: center;
     margin-left: 22px;
     margin-top: -5px;
-    width: 549px;
+    width: 463px;
   }
-  /* line 337, ../scss/components/_slider.scss */
-  .slide2 .slider2__content-part2 .number {
+  /* line 361, ../scss/components/_slider.scss */
+  .slider2 .slider2__content-part2 .number {
     font-weight: 600;
     color: #FFC627;
     font-size: 54px;
   }
-  /* line 342, ../scss/components/_slider.scss */
-  .slide2 .slider2__content-part2 .step {
+  /* line 366, ../scss/components/_slider.scss */
+  .slider2 .slider2__content-part2 .step {
     font-size: 35px;
     font-weight: 600;
     line-height: 40px;
     text-align: center;
     width: 250px;
   }
-  /* line 350, ../scss/components/_slider.scss */
-  .slide2 .slider2__content .counter {
+  /* line 374, ../scss/components/_slider.scss */
+  .slider2 .slider2__content .counter {
     display: flex;
     flex-direction: row;
     font-size: 27px;
@@ -1233,7 +1257,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     top: 382px;
   }
 
-  /* line 363, ../scss/components/_slider.scss */
+  /* line 387, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots {
     align-items: flex-end;
     bottom: 245px;
@@ -1241,46 +1265,51 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     flex-direction: column;
     list-style: none;
     position: absolute;
-    right: 20px;
+    right: 170px;
     text-align: center;
   }
-  /* line 373, ../scss/components/_slider.scss */
+  /* line 397, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li.slick-active {
     border-radius: 100%;
     border-style: solid;
     border-width: 2px;
     color: #FFC627;
   }
-  /* line 379, ../scss/components/_slider.scss */
+  /* line 403, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button {
     margin: 20px;
   }
-  /* line 381, ../scss/components/_slider.scss */
+  /* line 405, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button:before {
     color: #0D2240;
     font-size: 15px;
     left: -2px;
     top: -1px;
   }
-  /* line 391, ../scss/components/_slider.scss */
+  /* line 415, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev {
-    left: 1080px;
-    top: 410px;
+    color: #FFCA33;
+    left: 1125px;
+    top: 387px;
     z-index: 1;
   }
-  /* line 395, ../scss/components/_slider.scss */
+  /* line 420, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev:before {
+    content: "\e900";
     color: #FFC627;
+    font-family: 'iconFont';
     font-size: 50px;
   }
-  /* line 400, ../scss/components/_slider.scss */
+  /* line 427, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next {
-    left: 1200px;
-    top: 410px;
+    right: 190px;
+    top: 387px;
   }
-  /* line 403, ../scss/components/_slider.scss */
+  /* line 430, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next:before {
+    content: "\e901";
     color: #FFC627;
+    font-family: 'iconFont';
     font-size: 50px;
   }
 }
