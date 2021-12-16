@@ -205,9 +205,9 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("./../fonts/iconFont.eot?in8d85");
-  src: url("./../fonts/iconFont.eot?in8d85#iefix") format("embedded-opentype"), url("./../fonts/iconFont.ttf?in8d85") format("truetype"), url("./../fonts/iconFont.woff?in8d85") format("woff"), url("./../fonts/iconFont.svg?in8d85#icomoon") format("svg");
+  font-family: 'iconFont';
+  src: url("./../fonts/iconFont/iconFont.eot?rab47v");
+  src: url("./../fonts/iconFont/iconFont.eot?rab47v#iefix") format("embedded-opentype"), url("./../fonts/iconFont/iconFont.ttf?rab47v") format("truetype"), url("./../fonts/iconFont/iconFont.woff?rab47v") format("woff"), url("./../fonts/iconFont/iconFont.svg?rab47v#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -216,7 +216,6 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'iconFont' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -227,13 +226,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, ../scss/base/_icons.scss */
-.icon-arrow_back_chevron_direction_left_navigation_right_icon_123223:before {
+/* line 27, ../scss/base/_icons.scss */
+.icon-arrow-back:before {
   content: "\e900";
 }
 
-/* line 31, ../scss/base/_icons.scss */
-.icon-arrows_chevron_direction_left_move_next_right_icon_123222:before {
+/* line 30, ../scss/base/_icons.scss */
+.icon-arrow-next:before {
   content: "\e901";
 }
 
@@ -838,19 +837,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   padding: 11px 38px;
 }
 
-/* line 2, ../scss/components/_slider.scss */
+/* line 1, ../scss/components/_slider.scss */
+.icon-arrow-back {
+  color: #000000;
+}
+
+/* line 4, ../scss/components/_slider.scss */
 .slider1 {
   max-width: 414px;
   width: 100%;
 }
-/* line 5, ../scss/components/_slider.scss */
+/* line 7, ../scss/components/_slider.scss */
 .slider1__content1 {
   color: #ffffff;
   font-size: 40px;
   position: absolute;
   text-align: center;
 }
-/* line 10, ../scss/components/_slider.scss */
+/* line 12, ../scss/components/_slider.scss */
 .slider1__content1-cont {
   align-items: center;
   display: flex;
@@ -860,13 +864,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 43px;
   position: absolute;
 }
-/* line 19, ../scss/components/_slider.scss */
+/* line 21, ../scss/components/_slider.scss */
 .slider1__content1-cont h1 {
   font-size: 45px;
   letter-spacing: 3.8px;
   margin-top: 10px;
 }
-/* line 25, ../scss/components/_slider.scss */
+/* line 27, ../scss/components/_slider.scss */
 .slider1__content1 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -874,8 +878,9 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 197px;
   width: 332px;
 }
-/* line 32, ../scss/components/_slider.scss */
+/* line 34, ../scss/components/_slider.scss */
 .slider1__content1 .btn {
+  background: #FFCA33;
   align-items: center;
   display: flex;
   height: 64px;
@@ -884,12 +889,12 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 55px;
   width: 251.71px;
 }
-/* line 40, ../scss/components/_slider.scss */
+/* line 43, ../scss/components/_slider.scss */
 .slider1__content1 .btn__link {
   font-size: 20px;
 }
 
-/* line 47, ../scss/components/_slider.scss */
+/* line 50, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots {
   bottom: 84px;
   display: block;
@@ -900,14 +905,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 100%;
 }
-/* line 57, ../scss/components/_slider.scss */
+/* line 60, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots li.slick-active {
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
   color: #FFCA33;
 }
-/* line 65, ../scss/components/_slider.scss */
+/* line 68, ../scss/components/_slider.scss */
 .slid-dots1 .slick-dots li button:before {
   color: #ffffff;
   font-size: 14px;
@@ -916,24 +921,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 1440px) {
-  /* line 77, ../scss/components/_slider.scss */
+  /* line 80, ../scss/components/_slider.scss */
   body {
     max-width: 1440px;
     width: 100%;
   }
 
-  /* line 81, ../scss/components/_slider.scss */
+  /* line 84, ../scss/components/_slider.scss */
   .slider1 {
     max-width: 1440px;
     width: 100%;
     text-align: center;
   }
-  /* line 85, ../scss/components/_slider.scss */
+  /* line 88, ../scss/components/_slider.scss */
   .slider1__content1 {
     color: #ffffff;
     position: absolute;
   }
-  /* line 88, ../scss/components/_slider.scss */
+  /* line 91, ../scss/components/_slider.scss */
   .slider1__content1-cont {
     align-items: center;
     color: #ffffff;
@@ -942,16 +947,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-left: 488px;
     margin-top: 201px;
   }
-  /* line 95, ../scss/components/_slider.scss */
+  /* line 98, ../scss/components/_slider.scss */
   .slider1__content1-cont .logo {
     margin-left: 20px;
   }
-  /* line 98, ../scss/components/_slider.scss */
+  /* line 101, ../scss/components/_slider.scss */
   .slider1__content1-cont h1 {
     font-size: 45px;
     letter-spacing: 4.5px;
   }
-  /* line 103, ../scss/components/_slider.scss */
+  /* line 106, ../scss/components/_slider.scss */
   .slider1__content1 p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -959,7 +964,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: 305px;
     width: 580px;
   }
-  /* line 110, ../scss/components/_slider.scss */
+  /* line 113, ../scss/components/_slider.scss */
   .slider1__content1 .btn {
     align-items: center;
     display: flex;
@@ -970,16 +975,16 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: 93px;
     width: 255px;
   }
-  /* line 119, ../scss/components/_slider.scss */
+  /* line 122, ../scss/components/_slider.scss */
   .slider1__content1 .btn__link {
     font-size: 20px;
   }
-  /* line 124, ../scss/components/_slider.scss */
+  /* line 127, ../scss/components/_slider.scss */
   .slider1 .slid {
     height: 627px;
   }
 
-  /* line 129, ../scss/components/_slider.scss */
+  /* line 132, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots {
     bottom: 100px;
     display: block;
@@ -990,65 +995,65 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 100%;
   }
-  /* line 139, ../scss/components/_slider.scss */
+  /* line 142, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots li.slick-active {
     border-radius: 100%;
     border-style: solid;
     border-width: 2px;
     color: #FFCA33;
   }
-  /* line 147, ../scss/components/_slider.scss */
+  /* line 150, ../scss/components/_slider.scss */
   .slid-dots1 .slick-dots li button:before {
     color: #ffffff;
     font-size: 14px;
     left: -2px;
     top: -1px;
   }
-  /* line 157, ../scss/components/_slider.scss */
+  /* line 160, ../scss/components/_slider.scss */
   .slid-dots1 .slick-arrow.slick-prev {
     left: 97px;
     top: 345px;
     z-index: 1;
   }
-  /* line 161, ../scss/components/_slider.scss */
+  /* line 164, ../scss/components/_slider.scss */
   .slid-dots1 .slick-arrow.slick-prev:before {
     color: #FFC627;
     content: url("");
     font-size: 70px;
     width: 8px;
   }
-  /* line 168, ../scss/components/_slider.scss */
+  /* line 171, ../scss/components/_slider.scss */
   .slid-dots1 .slick-arrow.slick-next {
     left: 1235px;
     top: 345px;
   }
-  /* line 171, ../scss/components/_slider.scss */
+  /* line 174, ../scss/components/_slider.scss */
   .slid-dots1 .slick-arrow.slick-next:before {
     content: "\e901";
     color: #FFC627;
     font-size: 70px;
   }
 }
-/* line 180, ../scss/components/_slider.scss */
+/* line 183, ../scss/components/_slider.scss */
 .slide2 {
   color: #0D2240;
   max-width: 500px;
   width: 100%;
 }
-/* line 184, ../scss/components/_slider.scss */
+/* line 187, ../scss/components/_slider.scss */
 .slide2 .text {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* line 189, ../scss/components/_slider.scss */
+/* line 192, ../scss/components/_slider.scss */
 .slide2 .text h1 {
   font-size: 35px;
   margin-top: 50px;
   text-align: center;
 }
-/* line 194, ../scss/components/_slider.scss */
+/* line 197, ../scss/components/_slider.scss */
 .slide2 .text h3 {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -1057,24 +1062,24 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 360px;
 }
-/* line 203, ../scss/components/_slider.scss */
+/* line 206, ../scss/components/_slider.scss */
 .slide2 .slider2 {
   margin-left: 10px;
 }
-/* line 205, ../scss/components/_slider.scss */
+/* line 208, ../scss/components/_slider.scss */
 .slide2 .slider2__content {
   display: flex;
   flex-direction: column;
   height: 883px;
   width: 3px;
 }
-/* line 211, ../scss/components/_slider.scss */
+/* line 214, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part1 img {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-/* line 217, ../scss/components/_slider.scss */
+/* line 220, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 {
   align-items: center;
   background: #ffffff;
@@ -1084,14 +1089,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 35px;
   width: 368px;
 }
-/* line 225, ../scss/components/_slider.scss */
+/* line 228, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 .number {
   color: #FFC627;
   font-size: 54px;
   margin-left: 10px;
   margin-top: 18px;
 }
-/* line 231, ../scss/components/_slider.scss */
+/* line 234, ../scss/components/_slider.scss */
 .slide2 .slider2__content-part2 .step {
   font-size: 35px;
   line-height: 34px;
@@ -1099,7 +1104,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   text-align: center;
   width: 250px;
 }
-/* line 239, ../scss/components/_slider.scss */
+/* line 242, ../scss/components/_slider.scss */
 .slide2 .slider2__content .counter {
   display: flex;
   flex-direction: column;
@@ -1110,7 +1115,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   top: 88px;
 }
 
-/* line 252, ../scss/components/_slider.scss */
+/* line 255, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots {
   align-items: center;
   bottom: 80px;
@@ -1121,18 +1126,18 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   position: absolute;
   text-align: center;
 }
-/* line 262, ../scss/components/_slider.scss */
+/* line 265, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li.slick-active {
   border-radius: 100%;
   border-style: solid;
   border-width: 2px;
   color: #FFC627;
 }
-/* line 268, ../scss/components/_slider.scss */
+/* line 271, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button {
   margin: 20px;
 }
-/* line 270, ../scss/components/_slider.scss */
+/* line 273, ../scss/components/_slider.scss */
 .slid-dots2 .slick-dots li button:before {
   color: #0D2240;
   font-size: 15px;
@@ -1141,14 +1146,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 1440px) {
-  /* line 281, ../scss/components/_slider.scss */
+  /* line 284, ../scss/components/_slider.scss */
   .slide2 {
     color: #0D2240;
     margin-left: -5px;
     max-width: 1440px;
     width: 100%;
   }
-  /* line 286, ../scss/components/_slider.scss */
+  /* line 289, ../scss/components/_slider.scss */
   .slide2 .text {
     align-items: center;
     display: flex;
@@ -1156,14 +1161,14 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     justify-content: center;
     width: 1440px;
   }
-  /* line 292, ../scss/components/_slider.scss */
+  /* line 295, ../scss/components/_slider.scss */
   .slide2 .text h1 {
     font-size: 35px;
     font-weight: 600;
     margin-top: 39px;
     text-align: center;
   }
-  /* line 298, ../scss/components/_slider.scss */
+  /* line 301, ../scss/components/_slider.scss */
   .slide2 .text h3 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -1171,20 +1176,20 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 461px;
   }
-  /* line 306, ../scss/components/_slider.scss */
+  /* line 309, ../scss/components/_slider.scss */
   .slide2 .slider2 {
     height: 467px;
     margin-right: 75px;
     margin-left: 75px;
   }
-  /* line 310, ../scss/components/_slider.scss */
+  /* line 313, ../scss/components/_slider.scss */
   .slide2 .slider2__content {
     display: flex;
     flex-direction: row;
     height: 467px;
     width: 1291px;
   }
-  /* line 316, ../scss/components/_slider.scss */
+  /* line 319, ../scss/components/_slider.scss */
   .slide2 .slider2__content-part1 img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -1192,7 +1197,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     object-fit: cover;
     width: 718px;
   }
-  /* line 325, ../scss/components/_slider.scss */
+  /* line 328, ../scss/components/_slider.scss */
   .slide2 .slider2__content-part2 {
     align-items: center;
     background: #ffffff;
@@ -1203,13 +1208,13 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     margin-top: -5px;
     width: 549px;
   }
-  /* line 334, ../scss/components/_slider.scss */
+  /* line 337, ../scss/components/_slider.scss */
   .slide2 .slider2__content-part2 .number {
     font-weight: 600;
     color: #FFC627;
     font-size: 54px;
   }
-  /* line 339, ../scss/components/_slider.scss */
+  /* line 342, ../scss/components/_slider.scss */
   .slide2 .slider2__content-part2 .step {
     font-size: 35px;
     font-weight: 600;
@@ -1217,7 +1222,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     text-align: center;
     width: 250px;
   }
-  /* line 347, ../scss/components/_slider.scss */
+  /* line 350, ../scss/components/_slider.scss */
   .slide2 .slider2__content .counter {
     display: flex;
     flex-direction: row;
@@ -1228,7 +1233,7 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     top: 382px;
   }
 
-  /* line 360, ../scss/components/_slider.scss */
+  /* line 363, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots {
     align-items: flex-end;
     bottom: 245px;
@@ -1239,41 +1244,41 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
     right: 20px;
     text-align: center;
   }
-  /* line 370, ../scss/components/_slider.scss */
+  /* line 373, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li.slick-active {
     border-radius: 100%;
     border-style: solid;
     border-width: 2px;
     color: #FFC627;
   }
-  /* line 376, ../scss/components/_slider.scss */
+  /* line 379, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button {
     margin: 20px;
   }
-  /* line 378, ../scss/components/_slider.scss */
+  /* line 381, ../scss/components/_slider.scss */
   .slid-dots2 .slick-dots li button:before {
     color: #0D2240;
     font-size: 15px;
     left: -2px;
     top: -1px;
   }
-  /* line 388, ../scss/components/_slider.scss */
+  /* line 391, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev {
     left: 1080px;
     top: 410px;
     z-index: 1;
   }
-  /* line 392, ../scss/components/_slider.scss */
+  /* line 395, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-prev:before {
     color: #FFC627;
     font-size: 50px;
   }
-  /* line 397, ../scss/components/_slider.scss */
+  /* line 400, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next {
     left: 1200px;
     top: 410px;
   }
-  /* line 400, ../scss/components/_slider.scss */
+  /* line 403, ../scss/components/_slider.scss */
   .slid-dots2 .slick-arrow.slick-next:before {
     color: #FFC627;
     font-size: 50px;
