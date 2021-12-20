@@ -1,0 +1,133 @@
+.form{
+    background-image: url(./../images/form.png);
+    color: color(complementary,one);
+    font-weight: 600;
+    padding-bottom: 3.9rem;
+    .container{
+        padding: 0;
+    }
+    &__text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 4rem;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-family: $font-secundary;
+            font-size: map-get($sizes,small);
+            font-weight: 400;
+            margin-top: 2.2rem;
+            text-align: center;
+            width: 34.1rem;
+
+        }  
+    }
+    &__for{
+        background: color(grayscale,white);
+        display: flex;
+        flex-direction: column;
+        font-size: map-get($sizes,small);
+        justify-content: space-between;
+        margin-left: 1.3rem;
+        margin-top: 1.4rem;
+        opacity: 69%;
+        padding-left: 4rem;
+        padding-top: 2.5rem;
+        width: 385px;
+        input{
+            border-color:#1A2741;
+            border-left: 0;
+            border-right: 0;
+            border-style: solid;
+            border-top: 0;
+            font-family: $font-primary;
+            margin-bottom: 0.4rem;
+            width: 30rem;
+        }
+        label{
+            margin-bottom: map-get($sizes,base);
+            margin-top: 3.7rem;
+        }
+        select{
+            border-color:#1A2741;
+            border-style: solid;
+            border-left: 0.1rem;
+            border-right: 0.1rem;
+            border-top: 0.1rem;
+            font-family: $font-primary;
+            width: 30rem;
+        }
+        &-birthday{
+            margin-top: 1.7rem;
+            flex-direction: row;
+            input{
+                width: 8.9rem;
+                margin-right: 1.4rem;
+            }
+            #month{
+                width: 8.9rem;
+                margin-right: 1.4rem;
+            }
+            
+        }
+        &-check{
+            align-items: center;
+            display: flex;
+            font-size: map-get($sizes,tiny);
+            flex-direction: row;
+            justify-content: center;
+            margin-left: -2.7rem;
+            margin-top: 3.6rem;
+            width: 24.4rem;
+            label{
+                width: 71.7rem;
+                margin-left: -1.2rem;
+            }
+        }
+        &-sus{
+            align-items: center;
+            display: flex;
+            font-size: map-get($sizes,tiny);
+            flex-direction: row;
+            justify-content: center;
+            margin-left: -1.1rem;
+            margin-top: -2.8rem;
+            width: 24.4rem;
+            label{
+                width: 131.7rem;
+            }
+        }
+        .btn-primary{
+            font-size: map-get($sizes,thumb);
+            height: map-get($sizes,huge);
+            margin-top: 1.5rem;
+            margin-left: 2.8rem;
+            margin-bottom: 4.6rem;
+            width: 25.1rem;
+        }
+    }
+}
+@include mq-min(xl){
+    .form{
+        background-image: url(./../images/form-desk.png);
+        &__text{
+            margin-top: 5rem;
+            h1{
+                font-size: 4.5rem;
+            }
+            p{
+                font-size: map-get($sizes, base);
+                margin-top: 2.5rem;
+                width: 58rem;
+            }
+        }
+        &__for{
+            margin-left: 18.2rem;
+            margin-top: 1.8rem;
+            width: 77.2rem;
+        }
+    }
+}
