@@ -157,80 +157,105 @@
     </section>
     <section class="form">
         <div class="container">
-            <div class="form__text">
-                <h1>H1 CAMPAÑA ACTUAL</h1>
-                <p>
-                    Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
-                    purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor 
-                    purus non enim praesent elementum facilisis leo, vel
-                </p>
-            </div>
-            <div class="form__for">
-                <div class="form__for-element1">
-                    <label for="name">Nombre*</label>
-                    <input type="text" id="name" name="user-name" placeholder="Ingresa tu nombre" aria-required="true">
-                    <label for="lastname">Apellido*</label>
-                    <input type="text" id="name" name="user-lastname" placeholder="Ingresa tu apellido" aria-required="true">
+                <div class="form__text">
+                    <h1>H1 CAMPAÑA ACTUAL</h1>
+                    <p>
+                        Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                        purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor 
+                        purus non enim praesent elementum facilisis leo, vel
+                    </p>
                 </div>
-                <div class="form__for-element2">
-                    <label for="id">Cédula*</label>
-                    <input type="number" id="id" name="user-id" placeholder="Ingresa tu cédula" aria-required="true">
-                    <label for="telefono">Teléfono*</label>
-                    <input type="number" id="telefono" name="user-tel" placeholder="Ingresa tu teléfono" aria-required="true">
-                </div>
-                <div class="form__for-element3">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="mail" name="user-mail" placeholder="Ingresa tu correo" aria-required="true">
-                    <label for="provincia">Provincia</label>
-                    <select name="provincia" id="prov">
-                        <option value="">Antioquia</option>
-                        <option value="">Bolivar</option>
-                        <option value="">Cundinamarca</option>
-                        <option value="">Guaviare</option>
-                        <option value="">Huila</option>
-                    </select>
-                </div>
-                <div class="form__for-element4">
-                    <label for="genero">Género</label>
-                    <select name="genero" id="gen">
-                        <option value="">Masculino</option>
-                        <option value="">Femenino</option>
-                        <option value="">Otro</option>
-                    </select>
-                    <label for="birthday">Fecha de nacimiento*</label>
-                    <div class="form__for-birthday">
-                        <input type="number" id="day" name="user-birthday" placeholder="DD" aria-required="true">
-                        <select name="months" id="month">
-                            <option value="">Enero</option>
-                            <option value="">Febrero</option>
-                            <option value="">Marzo</option>
-                            <option value="">Abril</option>
-                            <option value="">Mayo</option>
-                            <option value="">Junio</option>
-                            <option value="">Julio</option>
-                            <option value="">Agosto</option>
-                            <option value="">Septiembre</option>
-                            <option value="">Octubre</option>
-                            <option value="">Noviembre</option>
-                            <option value="">Diciembre</option>
-                        </select>
-                        <input type="number" id="year" name="user-birthyear" placeholder="AAAA" aria-required="true">
+                <form action="signupForm" id="signupForm">
+                    <div class="form__for">
+                        <div class="form__for-element">
+                            <div class="item">
+                                <label for="name" id="name">Nombre*</label>
+                                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" aria-required="true">
+                            </div>
+                            <div class="item">
+                                <label for="lastname" id="lastname">Apellido*</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Ingresa tu apellido" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form__for-element reverse">
+                            <div class="item">
+                                <label for="id">Cédula*</label>
+                                <input type="number" id="id" name="id" placeholder="Ingresa tu cédula" aria-required="true">
+                            </div>
+                            <div class="item">
+                                <label for="telefono">Teléfono*</label>
+                                <input type="number" id="tel" name="tel" placeholder="Ingresa tu teléfono" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form__for-element">
+                            <div class="item">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="mail" name="mail" placeholder="Ingresa tu correo" aria-required="true">
+                            </div>
+                            <div class="item">
+                                <label for="provincia">Provincia</label>
+                                <select name="prov" id="prov">
+                                    <option value="">Selecciona una</option>
+                                    <option value="">Antioquia</option>
+                                    <option value="">Bolivar</option>
+                                    <option value="">Cundinamarca</option>
+                                    <option value="">Guaviare</option>
+                                    <option value="">Huila</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__for-element reverse" id="forth">   
+                            <div class="item">
+                                <label for="genero">Género</label>
+                                <select name="gen" id="gen">
+                                    <option value="">Seleciona uno</option>
+                                    <option value="">Masculino</option>
+                                    <option value="">Femenino</option>
+                                    <option value="">Otro</option>
+                                </select>
+                            </div>
+                            <div class="item" id="date">
+                                <label for="birthday">Fecha de nacimiento*</label>
+                                <div class="form__for-birthday">
+                                    <input type="number" id="day" name="day" placeholder="DD" aria-required="true">
+                                    <select name="month" id="month">
+                                        <option value="">MM</option>
+                                        <option value="">Enero</option>
+                                        <option value="">Febrero</option>
+                                        <option value="">Marzo</option>
+                                        <option value="">Abril</option>
+                                        <option value="">Mayo</option>
+                                        <option value="">Junio</option>
+                                        <option value="">Julio</option>
+                                        <option value="">Agosto</option>
+                                        <option value="">Septiembre</option>
+                                        <option value="">Octubre</option>
+                                        <option value="">Noviembre</option>
+                                        <option value="">Diciembre</option>
+                                    </select>
+                                    <input type="number" id="year" name="year" placeholder="AAAA" aria-required="true">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </form>
+                <div class="form__check">
+                    <div class="form__check-terms">
+                        <input type="checkbox" id="agree" name="agree" aria-required="true">                
+                        <label for="terminos">Acepto términos y condiciones y políticas de privacidad</label>
+                    </div> 
+                    <div class="form__check-sus">  
+                        <input type="checkbox" id="suscrip" name="sus" aria-required="false">
+                        <label for="suscripcion">Deseo recibir información comercial y eventos de CORONA</label>
+                    </div> 
+                    <button role="link" type="submit" class="btn btn-primary">REGISTRARME</button>
                 </div>
-                <div class="form__for-check">
-                    <input type="checkbox" id="termninos" name="term" aria-required="true">                
-                    <label for="terminos">Acepto términos y condiciones y políticas de privacidad</label>
-                </div> 
-                <div class="form__for-sus">  
-                    <input type="checkbox" id="suscrip" name="sus" aria-required="false">
-                    <label for="suscripcion">Deseo recibir información comercial y eventos de CORONA</label>
-                </div> 
-                <button role="link" type="submit" class="btn btn-primary">REGISTRARME</button>
-            </div>
-        </div>    
+        </div>
     </section>
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/javascript.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/signup-form.js"></script>
 </body>
 </html>

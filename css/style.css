@@ -1365,15 +1365,17 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   border-style: solid;
   border-top: 0;
   font-family: "Bebas Neue", cursive;
+  font-weight: 600;
   margin-bottom: 0.4rem;
+  padding-left: 1.6rem;
   width: 30rem;
 }
-/* line 50, ../scss/components/_form.scss */
+/* line 52, ../scss/components/_form.scss */
 .form__for label {
   margin-bottom: 1.6rem;
   margin-top: 3.7rem;
 }
-/* line 54, ../scss/components/_form.scss */
+/* line 56, ../scss/components/_form.scss */
 .form__for select {
   border-color: #1A2741;
   border-style: solid;
@@ -1381,24 +1383,27 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   border-right: 0.1rem;
   border-top: 0.1rem;
   font-family: "Bebas Neue", cursive;
+  padding-left: 1.6rem;
   width: 30rem;
 }
-/* line 63, ../scss/components/_form.scss */
+/* line 66, ../scss/components/_form.scss */
 .form__for-birthday {
   margin-top: 1.7rem;
   flex-direction: row;
 }
-/* line 66, ../scss/components/_form.scss */
+/* line 69, ../scss/components/_form.scss */
 .form__for-birthday input {
-  width: 8.9rem;
+  text-align: center;
   margin-right: 1.4rem;
+  width: 8.9rem;
 }
-/* line 70, ../scss/components/_form.scss */
+/* line 74, ../scss/components/_form.scss */
 .form__for-birthday #month {
-  width: 8.9rem;
   margin-right: 1.4rem;
+  text-align: center;
+  width: 8.9rem;
 }
-/* line 76, ../scss/components/_form.scss */
+/* line 81, ../scss/components/_form.scss */
 .form__for-check {
   align-items: center;
   display: flex;
@@ -1409,12 +1414,12 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: 3.6rem;
   width: 24.4rem;
 }
-/* line 85, ../scss/components/_form.scss */
+/* line 90, ../scss/components/_form.scss */
 .form__for-check label {
   width: 71.7rem;
   margin-left: -1.2rem;
 }
-/* line 90, ../scss/components/_form.scss */
+/* line 95, ../scss/components/_form.scss */
 .form__for-sus {
   align-items: center;
   display: flex;
@@ -1425,11 +1430,11 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   margin-top: -2.8rem;
   width: 24.4rem;
 }
-/* line 99, ../scss/components/_form.scss */
+/* line 104, ../scss/components/_form.scss */
 .form__for-sus label {
   width: 131.7rem;
 }
-/* line 103, ../scss/components/_form.scss */
+/* line 108, ../scss/components/_form.scss */
 .form__for .btn-primary {
   font-size: 2rem;
   height: 6.4rem;
@@ -1440,28 +1445,104 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
 }
 
 @media (min-width: 1440px) {
-  /* line 114, ../scss/components/_form.scss */
+  /* line 119, ../scss/components/_form.scss */
   .form {
     background-image: url(./../images/form-desk.png);
+    padding-bottom: 15rem;
   }
-  /* line 116, ../scss/components/_form.scss */
+  /* line 122, ../scss/components/_form.scss */
   .form__text {
     margin-top: 5rem;
   }
-  /* line 118, ../scss/components/_form.scss */
+  /* line 124, ../scss/components/_form.scss */
   .form__text h1 {
     font-size: 4.5rem;
   }
-  /* line 121, ../scss/components/_form.scss */
+  /* line 127, ../scss/components/_form.scss */
   .form__text p {
     font-size: 1.6rem;
     margin-top: 2.5rem;
     width: 58rem;
   }
-  /* line 127, ../scss/components/_form.scss */
+  /* line 133, ../scss/components/_form.scss */
   .form__for {
     margin-left: 18.2rem;
     margin-top: 1.8rem;
     width: 77.2rem;
+    padding-bottom: 35.8rem;
+  }
+  /* line 138, ../scss/components/_form.scss */
+  .form__for-element {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 141, ../scss/components/_form.scss */
+  .form__for-element .item {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 144, ../scss/components/_form.scss */
+  .form__for-element .item input {
+    margin-left: 3rem;
+    margin-top: -0.5rem;
+    width: 30rem;
+  }
+  /* line 149, ../scss/components/_form.scss */
+  .form__for-element .item label {
+    font-size: 1.4rem;
+    margin-left: 3.4rem;
+  }
+  /* line 153, ../scss/components/_form.scss */
+  .form__for-element .item select {
+    margin-left: 3rem;
+  }
+  /* line 157, ../scss/components/_form.scss */
+  .form__for-element #date {
+    padding-right: 4.4rem;
+  }
+  /* line 162, ../scss/components/_form.scss */
+  .form__for .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 7.4rem;
+  }
+  /* line 168, ../scss/components/_form.scss */
+  .form__for #forth input {
+    width: 6.9rem;
+  }
+  /* line 173, ../scss/components/_form.scss */
+  .form__for-birthday {
+    flex-direction: row;
+  }
+  /* line 176, ../scss/components/_form.scss */
+  .form__for-birthday #day {
+    margin-right: -2.2;
+  }
+  /* line 179, ../scss/components/_form.scss */
+  .form__for-birthday #month {
+    width: 6.9rem;
+    margin-left: 0;
+  }
+  /* line 183, ../scss/components/_form.scss */
+  .form__for-birthday #year {
+    margin-left: 0px;
+  }
+  /* line 188, ../scss/components/_form.scss */
+  .form__check {
+    position: absolute;
+    margin-left: 36.3rem;
+    margin-top: -29rem;
+  }
+  /* line 192, ../scss/components/_form.scss */
+  .form__check-terms {
+    margin-bottom: 1.8rem;
+  }
+  /* line 195, ../scss/components/_form.scss */
+  .form__check button {
+    font-size: 2rem;
+    margin-left: 6.8rem;
+    margin-top: 8.2rem;
+    height: 6.4rem;
+    width: 25.1rem;
   }
 }

@@ -44,7 +44,9 @@
             border-style: solid;
             border-top: 0;
             font-family: $font-primary;
+            font-weight: 600;
             margin-bottom: 0.4rem;
+            padding-left: map-get($sizes,base);
             width: 30rem;
         }
         label{
@@ -58,18 +60,21 @@
             border-right: 0.1rem;
             border-top: 0.1rem;
             font-family: $font-primary;
+            padding-left: map-get($sizes,base);
             width: 30rem;
         }
         &-birthday{
             margin-top: 1.7rem;
             flex-direction: row;
             input{
-                width: 8.9rem;
+                text-align: center;
                 margin-right: 1.4rem;
+                width: 8.9rem;
             }
-            #month{
-                width: 8.9rem;
+            #month{             
                 margin-right: 1.4rem;
+                text-align: center;
+                width: 8.9rem;
             }
             
         }
@@ -113,6 +118,7 @@
 @include mq-min(xl){
     .form{
         background-image: url(./../images/form-desk.png);
+        padding-bottom: 15rem;
         &__text{
             margin-top: 5rem;
             h1{
@@ -128,6 +134,72 @@
             margin-left: 18.2rem;
             margin-top: 1.8rem;
             width: 77.2rem;
+            padding-bottom: 35.8rem;
+            &-element{
+                display: flex;
+                flex-direction: row;
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        margin-left: 3rem;
+                        margin-top: -0.5rem;
+                        width: 30rem;
+                    }
+                    label{
+                        font-size: map-get($sizes,small);
+                        margin-left: 3.4rem;
+                    }
+                    select{
+                        margin-left: 3rem;
+                    }
+                }
+                #date{
+                    padding-right:4.4rem ;
+                }
+             
+            }
+            .reverse{
+                display: flex;
+                flex-direction:row-reverse;
+                padding-right: 7.4rem;
+            }
+            #forth{
+                input{
+                    width: 6.9rem;
+                }
+            }
+
+            &-birthday{
+
+                flex-direction: row;
+                #day{
+                     margin-right: -2.2;
+                }
+                #month{
+                    width: 6.9rem;
+                    margin-left: 0;
+                }
+                #year{
+                    margin-left: 0px;
+                }
+            }
+        }
+        &__check{
+            position: absolute;
+            margin-left: 36.3rem;
+            margin-top: -29rem;
+            &-terms{
+                margin-bottom: 1.8rem;
+            }
+            button{
+                font-size: 2rem;
+                margin-left: 6.8rem;
+                margin-top: 8.2rem;
+                height: map-get($sizes, huge);
+                width: 25.1rem;
+            }
+
         }
     }
 }
