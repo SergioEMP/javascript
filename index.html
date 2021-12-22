@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Corona</title>
 </head>
 <body>
     <section>
@@ -165,7 +166,7 @@
                         purus non enim praesent elementum facilisis leo, vel
                     </p>
                 </div>
-                <form action="signupForm" id="signupForm">
+                <form action="" id="signupForm">
                     <div class="form__for">
                         <div class="form__for-element">
                             <div class="item">
@@ -196,11 +197,11 @@
                                 <label for="provincia">Provincia</label>
                                 <select name="prov" id="prov">
                                     <option value="">Selecciona una</option>
-                                    <option value="">Antioquia</option>
-                                    <option value="">Bolivar</option>
-                                    <option value="">Cundinamarca</option>
-                                    <option value="">Guaviare</option>
-                                    <option value="">Huila</option>
+                                    <option value=Antioquia">Antioquia</option>
+                                    <option value="Bolivar">Bolivar</option>
+                                    <option value="Cundinamarca">Cundinamarca</option>
+                                    <option value="Guaviare">Guaviare</option>
+                                    <option value="Huila">Huila</option>
                                 </select>
                             </div>
                         </div>
@@ -209,9 +210,9 @@
                                 <label for="genero">Género</label>
                                 <select name="gen" id="gen">
                                     <option value="">Seleciona uno</option>
-                                    <option value="">Masculino</option>
-                                    <option value="">Femenino</option>
-                                    <option value="">Otro</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                    <option value="Otro">Otro</option>
                                 </select>
                             </div>
                             <div class="item" id="date">
@@ -220,46 +221,47 @@
                                     <input type="number" id="day" name="day" placeholder="DD" aria-required="true">
                                     <select name="month" id="month">
                                         <option value="">MM</option>
-                                        <option value="">Enero</option>
-                                        <option value="">Febrero</option>
-                                        <option value="">Marzo</option>
-                                        <option value="">Abril</option>
-                                        <option value="">Mayo</option>
-                                        <option value="">Junio</option>
-                                        <option value="">Julio</option>
-                                        <option value="">Agosto</option>
-                                        <option value="">Septiembre</option>
-                                        <option value="">Octubre</option>
-                                        <option value="">Noviembre</option>
-                                        <option value="">Diciembre</option>
+                                        <option value="Enero">Enero</option>
+                                        <option value="Febrero">Febrero</option>
+                                        <option value="Marzo">Marzo</option>
+                                        <option value="Abril">Abril</option>
+                                        <option value="Mayo">Mayo</option>
+                                        <option value="Junio">Junio</option>
+                                        <option value="Julio">Julio</option>
+                                        <option value="Agosto">Agosto</option>
+                                        <option value="Septiembre">Septiembre</option>
+                                        <option value="Octubre">Octubre</option>
+                                        <option value="Noviembre">Noviembre</option>
+                                        <option value="Diciembre">Diciembre</option>
                                     </select>
                                     <input type="number" id="year" name="year" placeholder="AAAA" aria-required="true">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="form__check">
+                        <div class="form__check-terms">
+                            <input type="checkbox" id="agree" name="agree" aria-required="true">                
+                            <div class="termi">
+                                <label for="terminos">Acepto términos y condiciones y políticas de privacidad</label>
+                            </div>
+                        </div> 
+                        <div class="form__check-sus">  
+                            <input type="checkbox" id="suscrip" name="sus" aria-required="false">
+                            <div class="suscrip">
+                                <label for="suscripcion">Deseo recibir información comercial y eventos de CORONA</label>
+                            </div>
+                        </div> 
+                        <button role="link" type="submit" class="btn btn-primary" id="submit">REGISTRARME</button>
+                    </div>
                 </form>
-                <div class="form__check">
-                    <div class="form__check-terms">
-                        <input type="checkbox" id="agree" name="agree" aria-required="true">                
-                        <div class="termi">
-                            <label for="terminos">Acepto términos y condiciones y políticas de privacidad</label>
-                        </div>
-                    </div> 
-                    <div class="form__check-sus">  
-                        <input type="checkbox" id="suscrip" name="sus" aria-required="false">
-                        <div class="suscrip">
-                            <label for="suscripcion">Deseo recibir información comercial y eventos de CORONA</label>
-                        </div>
-                    </div> 
-                    <button role="link" type="submit" class="btn btn-primary">REGISTRARME</button>
-                </div>
+
         </div>
     </section>
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
-    <script type="text/javascript" src="./js/javascript.js"></script>
-    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="./js/signup-form.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ $(document).ready(function(){
         arrows:true,
         prevArrow: '<i class="icon-arrow-back"></i>',
         nextArrow: '<i class="icon-arrow-next"></i>',
-    });
+    }); 
   });
 
   var $status = $('.current');
