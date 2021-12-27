@@ -23,7 +23,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-error-warning:before {
+  content: "\e902";
+  color: #ee0004;
+}
 .icon-arrow-back:before {
   content: "\e900";
 }

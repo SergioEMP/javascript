@@ -155,11 +155,83 @@
                     select{
                         margin-left: 3rem;
                     }
+                    #gen{
+                        margin-top: 1.5rem;
+                    }
+                    #name-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 9.5rem;
+                        position: absolute ;
+                    }
+                    #lastname-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 9.5rem;
+                        position: absolute ;
+                    }
+                    #tel-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 9.5rem;
+                        position: absolute ;
+                    }
+                    #id-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 9.5rem;
+                        position: absolute ;
+                    }
+                    #mail-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 9.5rem;
+                        position: absolute ;
+                    }
+                    #prov-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 10rem;
+                        position: absolute ;
+                    }
+                    #day-error{
+                        display: none !important;
+                    }
+                    #month-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: -15rem;
+                        margin-top: 2.5rem;
+                        position: absolute;
+                    }
+                    #year-error{
+                        display: none !important;
+                    }
+                    #gen-error{
+                        color: color(complementary,five);
+                        font-family: $font-complementary;
+                        font-weight: 300;
+                        margin-left: 5rem;
+                        margin-top: 11.4rem;
+                        position: absolute ;
+                    }
                 }
                 #date{
                     padding-right:4.4rem ;
                 }
-             
             }
             .reverse{
                 display: flex;
@@ -209,7 +281,14 @@
                 height: map-get($sizes, huge);
                 width: 25.1rem;
             }
-
+            #agree-error{
+                color: color(complementary,five);
+                font-family: $font-complementary;
+                font-weight: 300;
+                margin-left: 4.5rem;
+                margin-top: 1.7rem;
+                position: absolute ;
+            }
         }
     }
 }

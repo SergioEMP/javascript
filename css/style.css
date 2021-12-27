@@ -97,6 +97,13 @@ hr {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url("./../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("./../fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* line 2, ../scss/base/_body.scss */
 *,
 *:before, *:after {
@@ -225,12 +232,18 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 27, ../scss/base/_icons.scss */
+/* line 26, ../scss/base/_icons.scss */
+.icon-error-warning:before {
+  content: "\e902";
+  color: #ee0004;
+}
+
+/* line 30, ../scss/base/_icons.scss */
 .icon-arrow-back:before {
   content: "\e900";
 }
 
-/* line 30, ../scss/base/_icons.scss */
+/* line 33, ../scss/base/_icons.scss */
 .icon-arrow-next:before {
   content: "\e901";
 }
@@ -1498,61 +1511,154 @@ a.text-link.text-primary-base:hover, button.text-link.text-primary-base:hover {
   .form__for-element .item select {
     margin-left: 3rem;
   }
-  /* line 159, ../scss/components/_form.scss */
+  /* line 158, ../scss/components/_form.scss */
+  .form__for-element .item #gen {
+    margin-top: 1.5rem;
+  }
+  /* line 161, ../scss/components/_form.scss */
+  .form__for-element .item #name-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 9.5rem;
+    position: absolute;
+  }
+  /* line 169, ../scss/components/_form.scss */
+  .form__for-element .item #lastname-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 9.5rem;
+    position: absolute;
+  }
+  /* line 177, ../scss/components/_form.scss */
+  .form__for-element .item #tel-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 9.5rem;
+    position: absolute;
+  }
+  /* line 185, ../scss/components/_form.scss */
+  .form__for-element .item #id-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 9.5rem;
+    position: absolute;
+  }
+  /* line 193, ../scss/components/_form.scss */
+  .form__for-element .item #mail-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 9.5rem;
+    position: absolute;
+  }
+  /* line 201, ../scss/components/_form.scss */
+  .form__for-element .item #prov-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    position: absolute;
+  }
+  /* line 209, ../scss/components/_form.scss */
+  .form__for-element .item #day-error {
+    display: none !important;
+  }
+  /* line 212, ../scss/components/_form.scss */
+  .form__for-element .item #month-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: -15rem;
+    margin-top: 2.5rem;
+    position: absolute;
+  }
+  /* line 220, ../scss/components/_form.scss */
+  .form__for-element .item #year-error {
+    display: none !important;
+  }
+  /* line 223, ../scss/components/_form.scss */
+  .form__for-element .item #gen-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 5rem;
+    margin-top: 11.4rem;
+    position: absolute;
+  }
+  /* line 232, ../scss/components/_form.scss */
   .form__for-element #date {
     padding-right: 4.4rem;
   }
-  /* line 164, ../scss/components/_form.scss */
+  /* line 236, ../scss/components/_form.scss */
   .form__for .reverse {
     display: flex;
     flex-direction: row-reverse;
     padding-right: 7.4rem;
   }
-  /* line 170, ../scss/components/_form.scss */
+  /* line 242, ../scss/components/_form.scss */
   .form__for #forth input {
     width: 6.9rem;
   }
-  /* line 175, ../scss/components/_form.scss */
+  /* line 247, ../scss/components/_form.scss */
   .form__for-birthday {
     flex-direction: row;
   }
-  /* line 178, ../scss/components/_form.scss */
+  /* line 250, ../scss/components/_form.scss */
   .form__for-birthday #day {
     margin-right: -2.2;
   }
-  /* line 181, ../scss/components/_form.scss */
+  /* line 253, ../scss/components/_form.scss */
   .form__for-birthday #month {
     width: 6.9rem;
     margin-left: 0;
   }
-  /* line 185, ../scss/components/_form.scss */
+  /* line 257, ../scss/components/_form.scss */
   .form__for-birthday #year {
     margin-left: 0px;
   }
-  /* line 190, ../scss/components/_form.scss */
+  /* line 262, ../scss/components/_form.scss */
   .form__check {
     position: absolute;
     margin-left: 36.3rem;
     margin-top: -29rem;
   }
-  /* line 194, ../scss/components/_form.scss */
+  /* line 266, ../scss/components/_form.scss */
   .form__check-terms {
     margin-bottom: 0.2rem;
   }
-  /* line 196, ../scss/components/_form.scss */
+  /* line 268, ../scss/components/_form.scss */
   .form__check-terms .termi {
     width: 33.5rem;
   }
-  /* line 201, ../scss/components/_form.scss */
+  /* line 273, ../scss/components/_form.scss */
   .form__check-sus .suscrip {
     width: 33.5rem;
   }
-  /* line 205, ../scss/components/_form.scss */
+  /* line 277, ../scss/components/_form.scss */
   .form__check button {
     font-size: 2rem;
     margin-left: 6.8rem;
     margin-top: 8.6rem;
     height: 6.4rem;
     width: 25.1rem;
+  }
+  /* line 284, ../scss/components/_form.scss */
+  .form__check #agree-error {
+    color: #EE0004;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 4.5rem;
+    margin-top: 1.7rem;
+    position: absolute;
   }
 }

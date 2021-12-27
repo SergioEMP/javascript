@@ -39,3 +39,11 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('./../fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
